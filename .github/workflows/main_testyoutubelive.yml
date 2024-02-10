@@ -6,7 +6,7 @@ name: Build and deploy container app to Azure Web App - testyoutubelive
 on:
   push:
     branches:
-      - main
+      - main             #push to main branch or if the branch is master then type master
   workflow_dispatch:
 
 jobs:
