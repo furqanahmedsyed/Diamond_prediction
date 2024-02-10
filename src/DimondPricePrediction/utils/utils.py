@@ -45,10 +45,10 @@ def evaluate_model(X_train,y_train,X_test,y_test,models):
         logging.info('Exception occured during model training')
         raise customexception(e,sys)
     
-def load_object(file_path):
+def load_object(file_path):             #to load our modules saved inside the artifacts folder
     try:
         with open(file_path,'rb') as file_obj:
-            return pickle.load(file_obj)
+            return pickle.load(file_obj)                                  #pickel (pkl) file
     except Exception as e:
         logging.info('Exception Occured in load_object function utils')
         raise customexception(e,sys)

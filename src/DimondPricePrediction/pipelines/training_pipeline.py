@@ -9,7 +9,7 @@ from src.DimondPricePrediction.components.model_evaluation import ModelEvaluatio
 
 import os
 import sys
-from src.DimondPricePrediction.logger import logging
+from src.DimondPricePrediction.logger import logging  
 from src.DimondPricePrediction.exception import customexception
 import pandas as pd
 class TrainingPipeline:
